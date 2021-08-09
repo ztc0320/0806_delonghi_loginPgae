@@ -212,6 +212,7 @@ header#loginTitle {
 }
 #wrap form#loginForm #loginSubTitle h2 {
     color: #777;
+    font-size: 22px;
     text-align: center;
     padding: 20px;
     font-weight: normal;
