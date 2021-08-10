@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import url(reset.css);
 
-div#wrap {
+/* div#wrap {
     border: 1px solid #000;
-}
-header#header {
+} */
+/* header#header {
     border: 1px solid #000;
-}
+} */
 
 /* main#main {
     border: 1px solid #000;  
@@ -221,12 +221,153 @@ header#loginTitle {
 div#multiTabArea button {
     color: #666;
     font-size: 15px;
-    padding: 20px;
+    padding: 22px;
     background-color: #fff;
     border: 1px solid #aaa;
+    position: relative;
+
     flex: 1;
+    cursor: pointer;
+}
+div#multiTabArea button:first-child {
+    color: #3289e8;
+    border: 1px solid #3289e8;
+    border-bottom: 1px solid #fff;
+}
+div#multiTabArea button:last-child {
+    border-left: none;
+    border-bottom: 1px solid #aaa;
 }
 /* div#multiTabArea end */
+
+/* table#loginTbl start */
+table#loginTbl {
+    width: 100%;
+    /* border: 1px solid #000; */
+    margin: 34px 0;
+}
+table#loginTbl td {
+    padding: 3px;
+}
+table#loginTbl caption {
+    color: #666;
+    font-size: 15px;
+    text-align-last: left;
+    caption-side: bottom;
+    margin: 8px 0;
+}
+table#loginTbl caption::before {
+    content: '\2022';
+}
+#loginTbl input {
+    width: 453px;
+    font-size: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+}
+#loginTbl input:focus {
+    outline: 1px solid #3289e8;
+    border: 1px solid #fff;
+}
+#loginTbl input::placeholder {
+    color: #bbb;
+}
+#loginTbl td:first-child {
+    width: 460px;
+    /* border: 1px solid #000; */
+}
+#loginTbl button {
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    font-size: 19px;
+    /* font-weight: bold; */
+    border: 1px solid #3289e8;
+    background-color: #3289e8;
+    transform: translateX(5px);
+    display: inline-block;
+}
+#loginTbl button:hover {
+    background-color: #5ba0e9;
+}
+/* table#loginTbl end */
+
+/* div#accuntLink start */
+div#accountLink {
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+div#accountLink > div:nth-child(2n) {
+    width: 1px;
+    height: 20px;
+}
+div#accountLink > div:nth-child(2n + 1) {
+    flex: 1;
+}
+div#accountLink div.seperateLine {
+    width: 1px;
+    height: 20px;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* div#accuntLink end*/
+
+/* span.accountLinkIcon */
+div#accountLink > div:nth-child(2n + 1) {
+    justify-content: center;
+    align-items: center;
+}
+#accountLink span.accountLinkIcon {
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid #000; */
+    border-radius: 40px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#accountLink span#join {
+    background-image: url(../images/icon01.png);
+    background-repeat: no-repeat;
+    background-size: 35px 27px;
+    background-position: center;
+}
+#accountLink div#joinDiv:hover span#join {
+    background-image: url(../images/icon01_on.png);
+    background-color: #3289e8;
+}
+#accountLink div#joinDiv:hover span.accountLinkIconTxt {
+    color: #3289e8;
+}
+#accountLink span#findId {
+    background-image: url(../images/icon02.png);
+    background-repeat: no-repeat;
+    background-size: 34px 27px;
+    background-position: center;
+}
+#accountLink div#findIdDiv:hover span#findId {
+    background-image: url(../images/icon02_on.png);
+    background-color: #3289e8;
+}
+#accountLink div#findIdDiv:hover span.accountLinkIconTxt {
+    color: #3289e8;
+}
+#accountLink span#findPw {
+    background-image: url(../images/icon03.png);
+    background-repeat: no-repeat;
+    background-size: 31px 28px;
+    background-position: center;
+}
+#accountLink div#findPwDiv:hover span#findPw {
+    background-image: url(../images/icon03_on.png);
+    background-color: #3289e8;
+}
+#accountLink div#findPwDiv:hover span.accountLinkIconTxt {
+    color: #3289e8;
+}
+/* span.accountLinkIcon */
 
 /* form#loginForm end */
 /* div#wrap end */
@@ -234,6 +375,7 @@ div#multiTabArea button {
 /* div#footerFrame start */
 div#footerFrame {
     height: 200px;
+    margin-top: 400px;
     /* 임시 설정 */
     background-color: #123869;
 }

@@ -118,6 +118,50 @@
                     <button type="button">이메일</button>
                     <button type="button">멤버십 번호</button>
                 </div>
+                <table id="loginTbl">
+                    <tbody>
+                        <caption>
+                            아이디는 회원가입 시 입력한 이메일 또는 멤버십 번호를 입력해주세요.
+                        </caption>
+                        <tr>
+                            <td>
+                                <input type="text" name="userId" id="userId" placeholder="E-mail" />
+                            </td>
+                            <td rowspan="2">
+                                <button type="submit">LOG IN</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" name="userPw" id="userPw" placeholder="Password" />
+                            </td>
+                            <!-- <td></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- table#loginTbl  -->
+
+                <div id="accountLink" class="flexContainer">
+                    <div id="joinDiv" class="flexContainer">
+                        <span id="join" class="accountLinkIcon"></span>
+                        <span class="accountLinkIconTxt">회원가입</span>
+                    </div>
+
+                    <div class="seperateLine"></div>
+
+                    <div id="findIdDiv" class="flexContainer">
+                        <span id="findId" class="accountLinkIcon"></span>
+                        <span class="accountLinkIconTxt">아이디 찾기</span>
+                    </div>
+
+                    <div class="seperateLine"></div>
+
+                    <div id="findPwDiv" class="flexContainer">
+                        <span id="findPw" class="accountLinkIcon"></span>
+                        <span class="accountLinkIconTxt">비밀번호</span>
+                    </div>
+                </div>
+                <!-- div#accountLink -->
                 <!-- div#multiTabArea -->
             </form>
             <!-- form#loginForm -->
